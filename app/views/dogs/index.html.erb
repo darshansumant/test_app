@@ -2,6 +2,16 @@
 
 <h1>Dogs</h1>
 
+<!-- Added functionality to sort & filter -->
+<p>Sort:
+  <%= link_to "by name", dogs_path(sort_by: :name) %>
+  <%= link_to "by age", dogs_path(sort_by: :age) %>
+</p>
+<p>Filter:
+  <%= link_to "dogs under 5yo", dogs_path(babies: :true) %>
+  <%= link_to "dogs above 5yo", dogs_path(adults: :true) %>
+</p>
+
 <table>
   <thead>
     <tr>
