@@ -12,12 +12,14 @@
   <% end %>
 
   <div class="field">
+    <!-- default original -->
     <%= form.label :name %>
     <%= form.text_field :name %>
-  </div>
 
-  <!-- add the new field defined -->
-  <div class="field">
+    <!-- add the new foreign keey field defined for Breed (one-to-many relation) -->
+    <%= form.collection_select(:breed_id, Breed.all, :id, :name) %>
+
+    <!-- add the new field defined for Age -->
     <%= form.label :age %>
     <%= form.number_field :age %>
   </div>

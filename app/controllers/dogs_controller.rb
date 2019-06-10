@@ -14,6 +14,8 @@ class DogsController < ApplicationController
       @dogs = Dog.all.select{|d| d.age < 5 }
     elsif params[:adults]
       @dogs = Dog.all.select{|d| d.age > 5 }
+    elsif params[:breed_id]
+      @dogs = Breed.find(params[:breed_id]).dogs
     else
       @dogs = Dog.all
     end
@@ -82,6 +84,6 @@ class DogsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
       # add new field when defined
-      params.require(:dog).permit(:name, :age)
+      params.require(:dog).permit(:name, :age, :breed_id)
     end
 end
