@@ -2,9 +2,12 @@
 
 <h1>Dogs</h1>
 
+<!-- Added functionality to filter & view by Breed -->
+<p>Breeds:
 <% Breed.all.each do |b| %>
   <%= link_to b.name, dogs_path(breed_id: b.id) %>
   <% end %>
+</p>
 
 <!-- Added functionality to sort & filter -->
 <p>Sort:
