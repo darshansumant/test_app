@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dtemeto4o
+  api_key: '689921529824758'
+  api_secret: rjsiNATzi5RbECCCwvGSRxtlHF8
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dtemeto4o
+  api_key: '689921529824758'
+  api_secret: rjsiNATzi5RbECCCwvGSRxtlHF8
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dtemeto4o
+  api_key: '689921529824758'
+  api_secret: rjsiNATzi5RbECCCwvGSRxtlHF8
+  enhance_image_tag: true
+  static_file_support: false

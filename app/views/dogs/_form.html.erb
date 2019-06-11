@@ -22,6 +22,12 @@
     <!-- add the new field defined for Age -->
     <%= form.label :age %>
     <%= form.number_field :age %>
+
+    <!-- enable picture -->
+    <%= form.label :picture %>
+    <%= form.hidden_field(:picture_cache) %>
+    <%= form.file_field(:picture) %>
+
   </div>
 
   <div class="actions">

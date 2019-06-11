@@ -84,6 +84,6 @@ class DogsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
       # add new field when defined
-      params.require(:dog).permit(:name, :age, :breed_id)
+      params.require(:dog).permit(:name, :age, :breed_id, :picture)
     end
 end
